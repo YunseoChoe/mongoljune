@@ -1,0 +1,74 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.nav {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* max-width: 1000px; */
+    margin: auto;
+    background-color: #FCEB95;
+}
+
+/* .nav .logo img {
+    width: 100px;
+} */
+
+
+.nav .nav_but button {
+    background: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px 30px;
+    font-size: 14px;
+    transition: .5s ease;
+}
+
+.nav .nav_but button:hover { /* 마우스 클릭시 색상 변경 */
+    background: white;
+    color: black;
+}
+
+.header {
+    background: url(/img/main.png); /* 배경 설정 */
+    background-position: center;
+    background-size: cover; /* 이미지를 전체 화면으로 채움 */
+    height: 100vh; /* 화면 전체 높이로 설정 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .title {
+    text-align: center; /* 요소 중앙 배열 */
+    margin-top: 800px;
+}
+
+.header .title img {
+    width: 100px;
+}
+
+.header .title h1 {
+    font-size: 40px;
+    color: black;
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+}
+
+.header .title p {
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: black;
+}
+

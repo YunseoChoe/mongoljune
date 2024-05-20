@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="./css/signup.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.0.min.js" ></script>
+
+</head>
+<body>
+    <h1>회원가입</h1>
+    <form id="signup-form">
+        <div class="input-group">
+            <input type="text" id="name" name="name" placeholder="이름" required>
+        </div>
+        <div class="input-group">
+            <input type="text" id="userid" name="userid" placeholder="아이디" required>
+        </div>
+        <div class="input-group">
+            <input type="password" id="password" name="password" placeholder="비밀번호" required>
+        </div>
+        <div class="input-group">
+            <select id="year" required>
+                <option>년</option>
+            </select>
+            <select id="month" required>
+                <option>월</option>
+            </select>
+            <select id="day" required>
+                <option>일</option>
+            </select>
+        </div>
+        <button type="submit" class="button">회원가입</button>
+    </form>
+    <script src="./js/signup.js"></script>
+    <script src="./js/ex.js"></script>    
+</body>
+</html>
