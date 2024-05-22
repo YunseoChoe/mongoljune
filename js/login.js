@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log(data.access_token);
             // localStorage에 저장
             localStorage.setItem('access_token', data.access_token);
-
+            
             // 로그인 성공 후 메인 페이지로 리다이렉트
             window.location.href = "./main.html";
         })
@@ -45,4 +45,5 @@ document.addEventListener('DOMContentLoaded', function() {
             console.error('오류 발생:', error.message);
         });
     });
+
 });

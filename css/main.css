@@ -17,7 +17,7 @@ body {
     align-items: center;
     /* max-width: 1000px; */
     margin: auto;
-    background-color: #FCEB95;
+    background-color: #FFE973;
 }
 
 /* .nav .logo img {
@@ -52,7 +52,7 @@ body {
 
 .header .title {
     text-align: center; /* 요소 중앙 배열 */
-    margin-top: 800px;
+    margin-top: 1000px;
 }
 
 .header .title img {
