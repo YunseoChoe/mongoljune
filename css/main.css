@@ -40,6 +40,10 @@ body {
     color: black;
 }
 
+#userid::after {
+    content: " 님, 안녕하세요!";
+}
+
 .header {
     background: url(/img/main.png); /* 배경 설정 */
     background-position: center;
