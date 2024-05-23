@@ -1,0 +1,8 @@
+body {
+    background-image: url('../img/stt_page.png');
+    background-size: cover; /* 이미지가 화면을 채우도록 크기 조정 */
+}
+
+#startBtn {
+    background-image: url('../img/start_button.png');
+}

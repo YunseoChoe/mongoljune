@@ -6,8 +6,12 @@
 }
 
 body {
+    background: url(/img/main.png); 
+    background-position: center;
+    background-size: cover; /* 이미지를 전체 화면으로 채움 */
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
+    
 }
 
 .nav {
@@ -15,10 +19,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* max-width: 1000px; */
     margin: auto;
-    background-color: #FFE973;
 }
+
+#userid {
+    margin-top: auto;
+}
+
+
 
 /* .nav .logo img {
     width: 100px;
@@ -40,27 +48,9 @@ body {
     color: black;
 }
 
-#userid::after {
-    content: " 님, 안녕하세요!";
-}
-
-.header {
-    background: url(/img/main.png); /* 배경 설정 */
-    background-position: center;
-    background-size: cover; /* 이미지를 전체 화면으로 채움 */
-    height: 100vh; /* 화면 전체 높이로 설정 */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .header .title {
     text-align: center; /* 요소 중앙 배열 */
     margin-top: 1000px;
-}
-
-.header .title img {
-    width: 100px;
 }
 
 .header .title h1 {
