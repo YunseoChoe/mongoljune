@@ -3,6 +3,28 @@ body {
     background-size: cover; /* 이미지가 화면을 채우도록 크기 조정 */
 }
 
+#startBtn img{
+    width: 100px;
+    height: 100px;
+} 
+
 #startBtn {
-    background-image: url('../img/start_button.png');
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    margin-left: 856px;
+    margin-top: 850px;
+}
+
+#question {
+    position: absolute;
+    color: black;
+    width: 500px;
+    height: 100px;
+    /* border: 1px solid black; */
+    text-align: center;
+    align-items: center;
+    margin-left: 780px;
+    margin-top: 240px;
+    font-size: 40px;
 }
