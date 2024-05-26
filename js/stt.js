@@ -1,6 +1,6 @@
 // 음성 인식 객체 생성
 const recognition = new webkitSpeechRecognition();
-const STT_API_URL = "https://www.mongoljune.shop/openai/generate";
+const STT_API_URL = "";
 let answerResult = "";
 
 window.onload = async () => {
