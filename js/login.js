@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // 응답 성공시
             return response.json(); // JSON 데이터를 추출하여 JavaScript 객체로 파싱
         })
-        .then(data => {
+        .then(data => { 
             // 서버에서 반환된 데이터 출력
             console.log(data.access_token);
             // localStorage에 저장

@@ -1,15 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>하루를 들려줘</title>
     <link rel="stylesheet" href="./css/stt.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.0.min.js" ></script>
 </head>
 </head>
 <body>
-    <button id="startBtn"><img src="./img/start_button.png"></button>
+    <div class="btn">
+        <button id="startBtn"><img src="./img/start_button.png"></button>
+        <button id="stopBtn"><img src="./img/stop_button.png"></button>
+    </div>
+    <div class="question">
+        <h2 id="question"></h2>
+    </div>
     <script src="./js/stt.js"></script>
-    <h2 id="question"></h2>
+    <script src="./js/ex.js"></script>    
 </body>
 </html>
