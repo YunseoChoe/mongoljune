@@ -5,20 +5,18 @@
 }
 
 body {
-    border: 1px solid blue;
-    background: url(/img/main.png); 
-    background-position: center;
+    background: url(/img/main_new.png); 
     background-size: cover; /* 이미지를 전체 화면으로 채움 */
 }
 
 .nav {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex; /* 정렬하려는 요소의 부모 요소에 다음과 같이 display: flex 속성을 선언하면 됨. 속성이 적용된 요소는 flex container가 되고, flex container의 자식 요소는 flex item이 됨 */
     justify-content: flex-end; /* Flex Container 내의 Flex Item들을 주 축(main axis)을 따라 정렬하는 속성 중 하나 */
 }
 
 #userid {
-    border: 1px solid purple;
+    border: 1px solid rgb(203, 76, 203);
     margin-top: auto;
 }
 
@@ -37,20 +35,38 @@ body {
     color: black;
 }
 
-.header .title {
-    text-align: center; /* 요소 중앙 배열 */
-    margin-top: 1000px;
-}
-
-.header .title h1 {
+/* h1 {
+    border: 1px solid red;
     font-size: 40px;
     color: black;
     letter-spacing: 0.1em;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
-.header .title p {
-    margin-top: 0;
-    margin-bottom: 30px;
+p {
+    border: 1px solid blue;
+    margin-bottom: 0px;
     color: black;
+} */
+
+h1 {
+    border: 1px solid red;
+    font-size: 40px;
+    color: black;
+    letter-spacing: 0.1em;
+    margin-bottom: 0px;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+p {
+    border: 1px solid blue;
+    margin-bottom: 0px;
+    color: black;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
 }

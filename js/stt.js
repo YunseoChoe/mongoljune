@@ -25,12 +25,25 @@ window.onload = async () => {
     const recognition = new webkitSpeechRecognition();
     const STT_API_URL = "https://www.mongoljune.shop/openai/generate"; 
     let answerResult = "";
-    
+    let selectedDate = ""; // 날짜 선택 변수 추가
+
     const question = document.getElementById('question');
     question.innerText = "오늘의 날씨는 어때?";
 
     recognition.lang = 'ko-KR';
     recognition.continuous = true;
+
+    // 날짜 선택 버튼 이벤트 핸들러 추가
+    document.getElementById('selectDateBtn').addEventListener('click', () => {
+        selectedDate = document.getElementById('date').value;
+        if (selectedDate) {
+            document.getElementById('date-selection').style.display = 'none';
+            document.getElementById('voice-recognition').style.display = 'block';
+            console.log('선택된 날짜:', selectedDate);
+        } else {
+            alert('날짜를 선택하세요.');
+        }
+    });
 
     document.getElementById('startBtn').addEventListener('click', () => {
         recognition.start();
@@ -64,7 +77,16 @@ window.onload = async () => {
             question.innerText = "그래? 너의 하루를 들려줘";
         } else {
             question.innerText = "일기를 작성 중입니다..";
-            const answerResultJson = { "prompt": answerResult };
+
+            // 로컬 스토리지에서 토큰 값을 가져오기
+            const token = localStorage.getItem('token');
+            // JSON 객체 생성 및 토큰 값 추가
+            const answerResultJson = {
+                date: selectedDate, // 선택된 날짜 추가
+                prompt: answerResult,
+                token: token // 토큰 값을 JSON 객체에 추가
+            };
+            
             console.log(answerResultJson);
             console.log("서버로 데이터가 전송됩니다...");
             sendToServer(answerResultJson, STT_API_URL);
